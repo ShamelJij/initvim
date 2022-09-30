@@ -11,6 +11,7 @@ call plug#begin('C:/Users/IT_Admin/AppData/Local/nvim/plugged')
 " below are some vim plugins for demonstration purpose.
 " add the plugin you want to use here.
 Plug 'joshdick/onedark.vim'
+Plug 'honza/vim-snippets'
 Plug 'iCyMind/NeoSolarized'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/vim-easy-align'
