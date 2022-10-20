@@ -6,11 +6,14 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
+:set linebreak
+:set spelllang=en,de
 
 call plug#begin('C:/Users/IT_Admin/AppData/Local/nvim/plugged')
 " below are some vim plugins for demonstration purpose.
 " add the plugin you want to use here.
 Plug 'joshdick/onedark.vim'
+Plug 'inkarkat/vim-ingo-library' | Plug 'inkarkat/vim-SpellCheck'
 Plug 'honza/vim-snippets'
 Plug 'iCyMind/NeoSolarized'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -67,6 +70,14 @@ Plug 'junegunn/rainbow_parentheses.vim'
 set encoding=UTF-8
 call plug#end()
 
+
+" --- SpellCheck and Dictionary --- "
+map <F5> :setlocal spell!<CR>
+
+hi SpellBad cterm=underline "ctermfg=203 guifg=#ff5f5f 
+hi SpellLocal cterm=underline "ctermfg=203 guifg=#ff5f5f 
+hi SpellRare cterm=underline "ctermfg=203 guifg=#ff5f5f
+hi SpellCap cterm=underline "ctermfg=203 guifg=#ff5f5f
 
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
