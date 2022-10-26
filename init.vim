@@ -79,7 +79,7 @@ hi SpellLocal cterm=underline "ctermfg=203 guifg=#ff5f5f
 hi SpellRare cterm=underline "ctermfg=203 guifg=#ff5f5f
 hi SpellCap cterm=underline "ctermfg=203 guifg=#ff5f5f
 
-hi LineNr guifg=#40ffff
+hi lineNr guifg=#40ffff
 
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
